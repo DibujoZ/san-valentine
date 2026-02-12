@@ -1,0 +1,58 @@
+<div class="min-h-screen flex items-center justify-center p-5 bg-linear-to-br from-[#826cff] to-[#e1ddf5] font-sans overflow-hidden">
+  
+  <audio #bgMusic loop>
+    <source src="/assets/mp3/lovewinsall.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+  <div class="bg-white p-8 rounded-[20px] text-center shadow-[0_15px_30px_rgba(0,0,0,0.2)] max-w-87.5 w-full transition-all duration-500">
+    
+    @if (!accepted()) {
+      <h1 class="text-[#ff4d6d] text-3xl font-bold mb-4">Amochitoooo 🥺💕</h1>
+      
+      <div class="text-gray-700 text-lg leading-tight mb-6">
+        <p class="mb-4 font-medium uppercase tracking-wide">
+          BRISA LUCERO CABRERA PERALTA DE SIGLAS BCP, QUIERES SER MI SAN VALENTINE?
+        </p>
+        
+        <img src="/assets/img/dino.png" 
+             class="w-fit rounded-4xl mb-4 shadow-sm mx-auto">
+        
+        <span class="text-sm text-gray-500 italic">(di que si porfa)</span>
+      </div>
+
+      <div class="flex justify-center gap-4 flex-wrap relative">
+        <button 
+          (click)="yesClicked()"
+          class="bg-[#ff4d6d] hover:bg-[#ff1e4d] text-white font-bold py-3 px-6 rounded-full transition-colors duration-300 shadow-md">
+          Yes 💖
+        </button>
+
+        <button 
+          (mouseover)="moveButton()"
+          (touchstart)="moveButton()"
+          [style.transform]="noBtnTransform()"
+          class="bg-gray-200 text-gray-700 font-bold py-3 px-6 rounded-full transition-transform duration-200 cursor-default shadow-sm">
+          No 😢
+        </button>
+      </div>
+    } 
+    @else {
+      <div class="animate-bounce">
+        <h1 class="text-[#ff4d6d] text-3xl font-bold mb-4">SIIIIIIIIII!!! 💕🎉</h1>
+      </div>
+      
+      <div class="text-gray-700 text-lg leading-relaxed">
+        <p class="mb-4">Ya sabia que querias amochito, igual ya habia reservado te amuuuu❤️❤️❤️❤️❤️❤️❤️</p>
+        
+        <img src="/assets/img/tequeños.jpg" 
+             alt="Celebration" 
+             class="w-full rounded-lg mb-4 shadow-md mx-auto">
+        
+        <p class="font-black text-2xl text-[#ff4d6d] animate-pulse">Amochito de mi vida!!!</p>
+        <p class="font-black text-2xl text-[#ff4d6d] animate-pulse">Amochito de mi amor!!!</p>
+      </div>
+    }
+
+  </div>
+</div>
