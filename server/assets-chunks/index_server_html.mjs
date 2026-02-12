@@ -3,7 +3,7 @@ export default `<!doctype html>
 <head>
   <meta charset="utf-8">
   <title>SanvalentineProyecto</title>
-  <base href="/">
+  <base href="https://DibujoZ.github.io/san-valentine/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="icono2.png">
 <link rel="stylesheet" href="styles-AVF7YPR5.css"></head>
@@ -11,6 +11,6 @@ export default `<!doctype html>
 </script>
   <app-root></app-root>
   
-<script src="main-63E7KESQ.js" type="module"></script></body>
+<script src="main-S5UDLBZX.js" type="module"></script></body>
 </html>
 `;
